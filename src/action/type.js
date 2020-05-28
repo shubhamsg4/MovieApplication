@@ -1,0 +1,3 @@
+export const MOVIEDATA='MOVIEDATA';
+export const MOVIEDATA_ERROR='MOVIEDATA_ERROR';
+export const ACTIONTEST='ACTIONTEST';
