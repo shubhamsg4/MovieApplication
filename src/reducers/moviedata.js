@@ -1,7 +1,8 @@
-import {MOVIEDATA,MOVIEDATA_ERROR, ACTIONTEST} from '../action/type';
+import {MOVIEDATA,MOVIEDATA_ERROR, PRODUCTDATA, PRODUCTDATA_ERROR} from '../action/type';
 const initialState={
     movieProfiles:[],
     error:{},
+    productData:[],
     testvalue:null,
     loading:true
 
@@ -24,12 +25,21 @@ switch(type){
             loading:false
     
         };
-        case ACTIONTEST:
+        case PRODUCTDATA:
             return{
                 ...state,
-                testvalue:payload
+    
+                productData:payload,
+                loading:false
 
             }
+            case PRODUCTDATA_ERROR:
+        return {
+            ...state,
+            error:payload,
+            loading:false
+    
+        };
        
     default:
         return state;

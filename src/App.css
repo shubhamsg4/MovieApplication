@@ -73,3 +73,48 @@ display: inline;
 .displayInline{
   display: inline;
 }
+
+.center-service{
+  height:auto;
+  width:250px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.service{
+  height:200px;
+  width:200px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.product-data{
+  width:100%;
+  height:auto;
+  margin:20px;
+}
+
+
+.grid-container-2-80{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-gap:20px 20px;
+  background-color: #D3D3D3; 
+}
+
+.horizontal-flex{
+  display: flex;
+flex-flow: row wrap;
+}
+
+.vertical-flex{
+  display: flex;
+flex-flow: column wrap;
+}
+
